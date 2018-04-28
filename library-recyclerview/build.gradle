@@ -6,11 +6,10 @@ repositories {
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
-    buildToolsVersion rootProject.ext.buildToolsVersion
 
     defaultConfig {
-        minSdkVersion 14
-        targetSdkVersion 22
+        minSdkVersion 16
+        targetSdkVersion 27
         versionName project.VERSION_NAME
         versionCode Integer.parseInt(project.VERSION_CODE)
     }
@@ -19,16 +18,17 @@ android {
     lintOptions {
         abortOnError false
     }
+    buildToolsVersion '27.0.3'
 }
 
 dependencies {
     // Cards Library
-    compile project(':library-core')
+    api project(':library-core')
 
     //Annotation
-    compile 'com.android.support:support-annotations:22.1.1'
+    api 'com.android.support:support-annotations:27.1.0'
     //Recycler View
-    compile 'com.android.support:recyclerview-v7:22.1.1'
+    api 'com.android.support:recyclerview-v7:27.1.0'
 }
 
 // Used to update in Maven

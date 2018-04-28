@@ -11,8 +11,8 @@ android {
     buildToolsVersion rootProject.ext.buildToolsVersion
 
     defaultConfig {
-        minSdkVersion 14
-        targetSdkVersion 22
+        minSdkVersion 16
+        targetSdkVersion 27
         versionName project.VERSION_NAME
         versionCode Integer.parseInt(project.VERSION_CODE)
     }
@@ -25,14 +25,14 @@ android {
 
 dependencies {
     // Cards Library
-    compile project(':library-core')
-    compile project(':library-recyclerview')
+    api project(':library-core')
+    api project(':library-recyclerview')
 
     //Twowayview
-    compile 'org.lucasr.twowayview:core:1.0.0-SNAPSHOT@aar'
-    compile 'org.lucasr.twowayview:layouts:1.0.0-SNAPSHOT@aar'
+    api 'org.lucasr.twowayview:core:1.0.0-SNAPSHOT@aar'
+    api 'org.lucasr.twowayview:layouts:1.0.0-SNAPSHOT@aar'
 
 }
 
 // Used to update in Maven
-//apply from: '../maven_push.gradle'
+apply from: '../../maven_push.gradle'

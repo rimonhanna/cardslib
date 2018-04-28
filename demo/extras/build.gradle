@@ -8,11 +8,10 @@ repositories {
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
-    buildToolsVersion rootProject.ext.buildToolsVersion
 
     defaultConfig {
-        minSdkVersion 14
-        targetSdkVersion 22
+        minSdkVersion 16
+        targetSdkVersion 27
         versionName project.VERSION_NAME
         versionCode Integer.parseInt(project.VERSION_CODE)
     }
@@ -38,63 +37,65 @@ android {
     lintOptions {
         abortOnError false
     }
+    buildToolsVersion '27.0.3'
 }
 
 dependencies {
     // Cards Library
-    compile project(':library-core')
-    compile project(':library-cards')
-    compile project(':extra:extra-twoway')
-    compile project(':extra:extra-staggeredgrid')
-    compile project(':extra:extra-dragdrop')
+    api project(':library-core')
+    api project(':library-cards')
+    api project(':extra:extra-twoway')
+    api project(':extra:extra-staggeredgrid')
+    api project(':extra:extra-dragdrop')
 
     // Support Libraries
-    compile 'com.android.support:support-v4:22.1.1'
-    compile 'com.android.support:appcompat-v7:22.1.1'
+    api 'com.android.support:support-v4:27.1.0'
+    api 'com.android.support:appcompat-v7:27.1.0'
 
     //OkHttp
     //temporary patch for android-L for Okio packaging problem (see https://gist.github.com/JakeWharton/017738659d4f38adedc2)
     //compile fileTree(dir: 'libs', include: 'repackaged-*.jar')
-    compile 'com.squareup.okhttp:okhttp:2.0.0'
-    compile 'com.squareup.okhttp:okhttp-urlconnection:2.0.0'
+    api 'com.squareup.okhttp:okhttp:2.7.2'
+    api 'com.squareup.okhttp:okhttp-urlconnection:2.0.0'
     //Picasso
-    compile 'com.squareup.picasso:picasso:2.3.4'
+    api 'com.squareup.picasso:picasso:2.5.2'
 
     //Ion
-    //compile 'com.koushikdutta.ion:ion:1.3.1'
+    //api 'com.koushikdutta.ion:ion:1.3.1'
 
     //universal-image-loader
-    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.1'
+    api 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
 
     //Actionbar pull to refresh
-    compile 'com.github.chrisbanes.actionbarpulltorefresh:library:0.9.9'
+    api 'com.github.chrisbanes.actionbarpulltorefresh:library:0.9.9'
 
     //lListViewAnimations
-    compile 'com.nhaarman.listviewanimations:lib-core:3.1.0'
-    compile 'com.nhaarman.listviewanimations:lib-manipulation:3.1.0'
+    api 'com.nhaarman.listviewanimations:lib-core:3.1.0'
+    api 'com.nhaarman.listviewanimations:lib-manipulation:3.1.0'
 
     //Crouton
-    compile('de.keyboardsurfer.android.widget:crouton:1.8.5@aar') {
+    api ('de.keyboardsurfer.android.widget:crouton:1.8.5@aar') {
         // exclusion is not neccessary, but generally a good idea.
         exclude group: 'com.google.android', module: 'support-v4'
     }
 
     //StickyListHeaders
-    compile ('se.emilsjolander:stickylistheaders:2.5.0')
+    api ('se.emilsjolander:stickylistheaders:2.5.0')
 
     //Weather Lib
-    compile 'com.survivingwithandroid:weatherlib:1.3.2'
+//    api 'com.survivingwithandroid:weatherlib:1.3.2'
+    api 'com.survivingwithandroid:weatherlib:1.6.0'
 
     // Fading ActionBar
-    //compile 'com.github.manuelpeinado.fadingactionbar:fadingactionbar:3.0.0'
+    //api 'com.github.manuelpeinado.fadingactionbar:fadingactionbar:3.0.0'
 
     //Google Progress Bar
-    //compile 'com.jpardogo.googleprogressbar:library:1.1.0'
+    //api 'com.jpardogo.googleprogressbar:library:1.1.0'
 
-    compile 'com.github.castorflex.smoothprogressbar:library-circular:1.0.1'
+    api 'com.github.castorflex.smoothprogressbar:library-circular:1.0.1'
 
     //FAB
-    compile 'com.melnykov:floatingactionbutton:1.0.6'
+    api 'com.melnykov:floatingactionbutton:1.3.0'
 }
 
 

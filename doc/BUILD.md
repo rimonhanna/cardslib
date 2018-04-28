@@ -16,22 +16,22 @@ Card Library is pushed to Maven Central as a AAR, so you just need to add the fo
 
      dependencies {
         //Core card library
-        compile 'com.github.gabrielemariotti.cards:cardslib-core:2.1.0'
+        api 'com.github.gabrielemariotti.cards:cardslib-core:2.1.0'
         
         //Optional for built-in cards
-        compile 'com.github.gabrielemariotti.cards:cardslib-cards:2.1.0'
+        api 'com.github.gabrielemariotti.cards:cardslib-cards:2.1.0'
                 
         //Optional for RecyclerView
-        compile 'com.github.gabrielemariotti.cards:cardslib-recyclerview:2.1.0'
+        api 'com.github.gabrielemariotti.cards:cardslib-recyclerview:2.1.0'
           
         //Optional for staggered grid view support
-        compile 'com.github.gabrielemariotti.cards:cardslib-extra-staggeredgrid:2.1.0'
+        api 'com.github.gabrielemariotti.cards:cardslib-extra-staggeredgrid:2.1.0'
          
         //Optional for drag and drop support
-        compile 'com.github.gabrielemariotti.cards:cardslib-extra-dragdrop:2.1.0'
+        api 'com.github.gabrielemariotti.cards:cardslib-extra-dragdrop:2.1.0'
         
         //Optional for twowayview support (coming soon)
-        //compile 'com.github.gabrielemariotti.cards:cardslib-extra-twoway:2.1.0'
+        //api 'com.github.gabrielemariotti.cards:cardslib-extra-twoway:2.1.0'
           
     }
 
@@ -39,10 +39,10 @@ If you would like to use the last **v1 stable version** you can use:
     
     dependencies {
         //Core card library
-        compile 'com.github.gabrielemariotti.cards:library:1.9.1'
+        api 'com.github.gabrielemariotti.cards:library:1.9.1'
 
         //Extra card library, it is required only if you want to use integrations with other libraries
-        compile 'com.github.gabrielemariotti.cards:library-extra:1.9.1'
+        api 'com.github.gabrielemariotti.cards:library-extra:1.9.1'
     }
 
 
@@ -58,7 +58,7 @@ If you would like to use this **library-core** in Eclipse you have to do these s
 - add support library v4 rel.21
 - add support cardview library v7 rel.21
 - add support annotation library rel.21
-- The library targets SDK 21 and works with minSdk=14. In any cases you need to use API>=21 to compile library (Properties -> Android)
+- The library targets SDK 21 and works with minSdk=14. In any cases you need to use API>=21 to implementation library (Properties -> Android)
 - Clean and build
 
 If you would like to use this **library-cards** in Eclipse you have to do these steps:
@@ -68,7 +68,7 @@ If you would like to use this **library-cards** in Eclipse you have to do these 
 - mark java(*) folder as source (click on folder -> Build-Path -> use as source folder). You can also remove the src folder, from the project.
 - mark cardscore as Android Library (Properties -> Android -> Is library)
 - add the cardscore as library
-- The library targets SDK 21 and works with minSdk=14. In any cases you need to use API>=21 to compile library (Properties -> Android)
+- The library targets SDK 21 and works with minSdk=14. In any cases you need to use API>=21 to implementation library (Properties -> Android)
 - Clean and build
 
 
