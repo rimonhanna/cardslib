@@ -20,7 +20,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="it.gmariotti.cardslib.library">
 
-    <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="27"/>
 
     <application>
 

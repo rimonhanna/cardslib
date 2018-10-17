@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         minSdkVersion 16
-        targetSdkVersion 27
+        targetSdkVersion 28
         versionName project.VERSION_NAME
         versionCode Integer.parseInt(project.VERSION_CODE)
 
@@ -37,7 +37,7 @@ android {
     lintOptions {
         abortOnError false
     }
-    buildToolsVersion '27.0.3'
+    buildToolsVersion '28.0.3'
 }
 
 dependencies {
