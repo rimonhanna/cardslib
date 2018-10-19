@@ -46,8 +46,8 @@ dependencies {
     api project(':library-cards')
     api project(':library-recyclerview')
     // Support Libraries
-    api 'com.android.support:support-v4:27.1.0'
-    api 'com.android.support:appcompat-v7:27.1.0'
+    api 'com.android.support:support-v4:28.0.0'
+    api 'com.android.support:appcompat-v7:28.0.0'
 
     //androidTestapi 'com.jakewharton.espresso:espresso:1.1-r2'
 }
