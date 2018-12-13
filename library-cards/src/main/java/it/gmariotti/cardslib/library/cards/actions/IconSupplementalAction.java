@@ -19,7 +19,7 @@
 package it.gmariotti.cardslib.library.cards.actions;
 
 import android.content.Context;
-import android.support.annotation.IdRes;
+import androidx.annotation.IdRes;
 import android.view.View;
 
 import it.gmariotti.cardslib.library.internal.Card;

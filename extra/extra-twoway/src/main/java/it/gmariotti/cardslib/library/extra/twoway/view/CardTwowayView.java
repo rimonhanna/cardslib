@@ -20,7 +20,7 @@ package it.gmariotti.cardslib.library.extra.twoway.view;
 
 import android.content.Context;
 import android.content.res.TypedArray;
-import android.support.annotation.LayoutRes;
+import androidx.annotation.LayoutRes;
 import android.util.AttributeSet;
 
 import org.lucasr.twowayview.widget.TwoWayView;

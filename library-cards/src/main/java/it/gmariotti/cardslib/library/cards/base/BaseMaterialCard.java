@@ -18,7 +18,7 @@ package it.gmariotti.cardslib.library.cards.base;
  */
 
 import android.content.Context;
-import android.support.annotation.LayoutRes;
+import androidx.annotation.LayoutRes;
 import android.util.SparseArray;
 import android.view.View;
 import android.view.ViewStub;

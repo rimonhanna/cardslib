@@ -19,7 +19,7 @@
 
 package it.gmariotti.cardslib.demo.utils;
 
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 
 /**
  * An abstract interface to use SDK-L and SDK-19

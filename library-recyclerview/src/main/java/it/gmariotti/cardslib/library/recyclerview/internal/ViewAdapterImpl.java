@@ -18,7 +18,7 @@
 
 package it.gmariotti.cardslib.library.recyclerview.internal;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import it.gmariotti.cardslib.library.internal.Card;
 

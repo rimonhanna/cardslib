@@ -18,7 +18,7 @@
 
 package it.gmariotti.cardslib.demo.extras.utils;
 
-import android.support.v7.app.ActionBarActivity;
+import androidx.appcompat.app.ActionBarActivity;
 
 /**
  * An abstract interface to use SDK-L and SDK-19
